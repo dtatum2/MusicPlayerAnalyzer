@@ -1,2 +1,0 @@
-# MusicPlayerAnalyzer
-Final Project
