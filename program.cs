@@ -75,7 +75,7 @@ using System.IO;
                     i = 0;
                     foreach (Song song in AlternativeGenre)
                     {
-                        i++;
+                    i++;
                     }
                     report += $"songs in genre of Alternative: {i}"\n";
                     //3
@@ -105,12 +105,12 @@ using System.IO;
                     report += "Song names longer than 85 characters: \n";
                     foreach (String name in characters85)
                     {
-                        report += name + "\n";
+                    report += name + "\n";
                     }
                     //7
-                    var LongestSong = from song in songs orderby song.Time descending select song;
+                    var LongSong = from song in songs orderby song.Time descending select song;
                     report += "Longest song: \n";
-                    report += LongestSong.First();
+                    report += LongSong.First();
         
                     write.Write(report);
 
